@@ -1,0 +1,9 @@
+Questão 1.
+Padrão de arquitetura MVC onde as responsabilidades da aplicação são divididas em três componentes: Model View Controller.
+A camada model é responsável pelos dados e a lógica do negócio, a view é responsável pela interface e interação com o usuário, a camada control é a responsável pela entrada das informações, manipulação dos dados e atualização da view.
+
+Questão 2.
+A Clean Architecture é um padrão de projeto que facilita o entendimento, teste e manutenção. Focada na separação das responsabilidades por meio de camadas, com enfase na independência entre elas. O maior destaque para esta arquitetura está na inversão de dependência onde a lógica de negócios não depende das camadas externas, mas o contrário. 
+O objetivo principal é que a aplicação seja independente de frameworks, testável, interface de usuário, banco de dados e dispositivos externos.
+Um caso de uso seria ser o gerenciamento de uma loja virtual, onde temos por exemplo, cadastro de produtos, estoque, pedidos e frete. Na camada de entidades teríamos os objetos como produto, pedido, cliente etc, onde as regras de negócios bases seriam implementadas, por exemplo, cálculo de descontos e regras de validação. A camada de casos de uso, seria onde implementaríamos a operação da loja, como processar pedido, adicionar item, a camada de interface seria a responsável por conectar os casos de uso com os sistemas externos, como apis de frete, pagamento e também a interface com o usuário, e por fim a camada de frameworks onde teriamos as tecnologias por exemplo do asp.net, banco de dados, apis.
+
